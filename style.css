@@ -7,7 +7,7 @@ h1, h2, h3, p, figcaption, span {
 
 h1 {
 font-weight: 500px;
-color: black;
+color:  black;
 
 }
 
@@ -27,6 +27,7 @@ p {
 i.fab {
   margin-right: 20px;
   font-size: 50px;
+  color: #6C5B7B;
 }
 
 .bottom-page-links p {
@@ -129,4 +130,8 @@ ul, menu, dir {
   .block {
     width: 300px;
   }
+
+  .bouton {
+  margin-bottom: 10px;
+}
 }
