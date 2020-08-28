@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,500&display=swap');
 
-h1, h2, h3, p, figcaption, span {
+h1, h2, h3, p, span {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
@@ -24,6 +24,7 @@ h3{
 p {
   font-weight: 100px;
 }
+
 i.fab {
   margin-right: 20px;
   font-size: 50px;
@@ -39,28 +40,27 @@ i.fab {
   text-decoration : none;!important
 }
 
-
-
 body {
 
 background-color: #fafafa;
 
 }
-
+.container {
+  margin: 0 170px;
+}
 .block {
   background-color: white;
   border-radius: 6px;
   padding: 20px 50px 28px;
-  margin: 0 170px 20px;
+  margin: 0 0px 20px;
   box-shadow: 0 8px 20px rgba(0,0,0,.1);
   text-align: center;
 }
 
 #first-block img {
+  animation: pulse 3s infinite;
   border-radius: 75px;
-  border: solid;
-  border-width: 4px;
-  border-color: white;
+  border: 6px solid rgba(255,255,255,0.7);
 }
 
 #third-block, #first-block {
@@ -86,7 +86,6 @@ background-color: #fafafa;
 }
 
 .bouton:hover {
-/*background-image: url(profile/images/test1.jpg)!important*/
 background-color: #C06C84;
 color: white;
 }
@@ -94,8 +93,6 @@ color: white;
 .bouton:hover p {
 color: white;
 }
-
-
 
 i.fab:hover {
 color: #F67280;
@@ -114,24 +111,61 @@ ul, menu, dir {
 }
 
 @media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .block {
-    width: 700px;
+  .container {
+    width: 600px;
   }
 }
 @media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-  ..block {
-    width: 500px;
+  .container {
+    width: 400px;
+  }
+
+    h1 {
+    font-size: 26px;
+  }
+  .first-block p{
+  font-size: 14px;
+  text-align: justify;
+  }
+
+   .second-block > p{
+  font-size: 14px;
+  text-align: justify;
+  }
+
+   .third-block p{
+  font-size: 14px;
+  text-align: justify;
   }
 }
 @media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .block {
-    width: 300px;
-  }
 
   .bouton {
-  margin-bottom: 30px;
-}
+    margin-bottom: 30px;
+    margin-left: 0px;
+  }
+
+  .container {
+  margin: auto;
+  width: 300px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+  #first-block p{
+  font-size: 14px;
+  text-align: justify;
+  }
+
+   #second-block > p{
+  font-size: 14px;
+  text-align: justify;
+  }
+
+   #third-block p{
+  font-size: 14px;
+  text-align: justify;
+  }
+
 }
